@@ -32,7 +32,7 @@ body {
 }
 .showBtn {
   align-items: center;
-  background-color: rgba(1, 116, 210, 0.971);
+  background-color: rgb(255, 105, 180);
   border-radius: 5px;
   color: #fff;
   display: flex;
@@ -65,7 +65,7 @@ body {
   color: red;
 }
 .submit-button {
-  background-color: #007bff;
+  background-color: rgb(255, 105, 180);
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -75,6 +75,6 @@ body {
   transition: background-color 0.3s ease;
 }
 .submit-button:hover {
-  background-color: #0056b3;
+  background-color: rgb(255, 105, 160);
 }
 /*# sourceMappingURL=main.2609a62c.css.map*/

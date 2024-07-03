@@ -24,7 +24,8 @@ const userSchema = new mongoose.Schema(
     location: { type: String },
     profileUrl: { type: String },
     profession: { type: String },
-    friends: [{ type: Schema.Types.ObjectId, ref: "Users" }],//These ObjectId values can reference documents (records) in another collection (model).this is referring to same model as there are user is a friend of other users
+    friends: [{ type: Schema.Types.ObjectId, ref: "Users" }],
+    //These ObjectId values can reference documents (records) in another collection (model).this is referring to same model as user is a friend of other users
     views: [{ type: String }],
     verified: { type: Boolean, default: false },
   },
