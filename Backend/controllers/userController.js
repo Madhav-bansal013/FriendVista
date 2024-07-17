@@ -234,7 +234,7 @@ export const updateUser = async (req, res, next) => {
 
     await user.populate({ path: "friends", select: "-password" });
 
-    // const token = createJWT(user?._id);
+    const token = createJWT(user?._id);
     //new token for updated user as old token can contain old user details not in our case as we have only id
 
     user.password = undefined;
@@ -243,7 +243,7 @@ export const updateUser = async (req, res, next) => {
       sucess: true,
       message: "User updated successfully",
       user,
-      // token,
+      token,
     });
   } catch (error) {
     console.log(error);
@@ -317,9 +317,6 @@ export const getFriendRequest = async (req, res, next) => {
         _id: -1, //sort by id in descending
       });
 
-    if (request.length === 0) {
-      return next("No Friend Requests Found.");
-    } //add
     res.status(200).json({
       success: true,
       data: request, //send the req data
