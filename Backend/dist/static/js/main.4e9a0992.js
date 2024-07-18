@@ -9726,7 +9726,7 @@
                             (e.prev = 8),
                             (e.next = 11),
                             fetch(
-                              "http://localhost:4000/users/reset-password",
+                              "https://friendvista.onrender.com/users/reset-password",
                               {
                                 method: "POST",
                                 headers: { "Content-Type": "application/json" },

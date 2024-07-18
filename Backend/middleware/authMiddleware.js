@@ -8,7 +8,7 @@ const userAuth = async (req, res, next) => {
   if (!authHeader || !authHeader?.startsWith("Bearer")) {
     next("Authentication== failed");
   }
-  console.log(authHeader);
+  // console.log(authHeader);
   const token = authHeader?.split(" ")[1];
 
   try {
