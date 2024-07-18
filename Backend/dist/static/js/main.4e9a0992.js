@@ -9694,7 +9694,7 @@
         v = u((0, e.useState)(null), 2),
         g = v[0],
         y = v[1],
-        b = "http://localhost:5173/login",
+        b = "https://friendvista.netlify.app/login",
         w = (function () {
           var e,
             t =
