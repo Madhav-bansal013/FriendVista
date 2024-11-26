@@ -1,4 +1,4 @@
-# FrirndVista (Social Media Online Platform)
+# FriendVista (Social Media Online Platform)
 
 ## Description
 
